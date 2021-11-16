@@ -4,6 +4,7 @@ from decimal import Decimal
 import currency
 import glob
 import glob
+from typing import Dict
 
 pdf_file = glob.glob(pathname='*.pdf')
 
@@ -31,7 +32,7 @@ replace_xml_content('入库日期替换', str(
     datetime.datetime.now().strftime("%Y-%m-%d")))
 replace_xml_content('供应商替换', str(extract.supplier))
 
-replace_dict: dict[str:str] = {
+replace_dict: Dict = {
     'name': '材料',
     'model': '规格',
     'unit': '单位',
