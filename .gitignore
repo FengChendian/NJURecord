@@ -1,0 +1,5 @@
+.vscode/*
+__pycache__/*
+
+*.pdf
+入库单—已填写.xml
